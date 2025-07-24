@@ -1,0 +1,147 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for the RPM IQ Exam app
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please provide detailed information to help us understand and evaluate your request.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: ✨ Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: Describe the feature you want to add
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: 🎯 Problem Statement
+      description: What problem does this feature solve? What user need does it address?
+      placeholder: Describe the problem or need this feature would address
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 💡 Proposed Solution
+      description: How would you like this feature to work?
+      placeholder: Describe how you envision the feature working
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: 📂 Feature Category
+      description: What category does this feature fall into?
+      options:
+        - User Interface/Experience
+        - Puzzle Generation
+        - Assessment/Scoring
+        - Accessibility
+        - Performance
+        - Data Export/Import
+        - Customization
+        - Educational Tools
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my usage
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: ⚙️ Estimated Complexity
+      description: How complex do you think this feature would be to implement?
+      options:
+        - Simple - Small UI change or configuration option
+        - Moderate - New component or feature addition
+        - Complex - Significant changes to core functionality
+        - Major - Large architectural changes required
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-stories
+    attributes:
+      label: 👤 User Stories
+      description: Describe how different users would interact with this feature
+      placeholder: |
+        As a [type of user], I want [goal] so that [benefit].
+        
+        Example:
+        As a teacher, I want to create custom puzzle sets so that I can tailor assessments to my students' skill levels.
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: ✅ Acceptance Criteria
+      description: What criteria should be met for this feature to be considered complete?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternative Solutions
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: Describe any alternative approaches you've considered
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: 📸 Examples or Mockups
+      description: Any examples, mockups, screenshots, or references that illustrate this feature?
+      placeholder: Provide links, images, or descriptions of similar features in other applications
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: 🎯 Use Cases
+      description: Specific scenarios where this feature would be useful
+      placeholder: Describe specific situations where this feature would be valuable
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📝 Additional Context
+      description: Any other information that would help us understand this request
+      placeholder: Add any other context, screenshots, or examples
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ☑️ Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided a clear description of the feature and its benefits
+          required: true
+        - label: I understand this is for feature requests only (not bug reports or questions)
+          required: true
+        - label: I am willing to help test this feature if it gets implemented
+          required: false

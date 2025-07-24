@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 General Discussion
+    url: https://github.com/yuis-ice/rpm-iq-exam/discussions
+    about: Ask questions, share ideas, or discuss the RPM IQ Exam app with the community
+  
+  - name: 📚 Documentation
+    url: https://github.com/yuis-ice/rpm-iq-exam/wiki
+    about: Read the documentation and guides for using the RPM IQ Exam app
+  
+  - name: 🔒 Security Issue
+    url: https://github.com/yuis-ice/rpm-iq-exam/security/advisories/new
+    about: Report a security vulnerability (do not create a public issue)
+  
+  - name: ❓ Stack Overflow
+    url: https://stackoverflow.com/questions/tagged/rpm-iq-exam
+    about: Ask technical questions on Stack Overflow with the 'rpm-iq-exam' tag
