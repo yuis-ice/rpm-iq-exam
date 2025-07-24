@@ -267,3 +267,6 @@ claude.pmt
 */*.compact
 *.zip
 .bolt
+
+# Articles directory for blog posts
+articles

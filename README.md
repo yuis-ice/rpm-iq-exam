@@ -11,6 +11,12 @@ An IQ Test SPA Application compatible with Raven's Progressive Matrices (RPM) pu
 
 Try the RPM IQ Exam now at **https://rpmtest.pages.dev/**
 
+## 📷 Screenshot
+
+![RPM IQ Exam Screenshot](screenshot.png)
+
+*Example of Level 4 puzzle - identify the pattern and select the missing piece*
+
 ## 📖 Overview
 
 RPM IQ Exam is a modern Single Page Application (SPA) based on Raven's Progressive Matrices tests. It provides scientifically validated pattern recognition tests to measure cognitive abilities and reasoning skills.

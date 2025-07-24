@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Brain, RotateCcw, Trophy, ArrowRight } from 'lucide-react';
+import { Brain, RotateCcw, Trophy, ArrowRight, Github } from 'lucide-react';
 import LevelSelection from './components/LevelSelection';
 import PuzzleGame from './components/PuzzleGame';
 import { GameState, Level, QuestionResult } from './types/game';
@@ -181,6 +181,15 @@ function App() {
               <RotateCcw className="w-4 h-4" />
               Retry Level
             </button>
+            <a
+              href="https://github.com/yuis-ice/rpm-iq-exam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-gray-800 text-white py-3 px-4 rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center justify-center gap-2"
+            >
+              <Github className="w-4 h-4" />
+              View on GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -196,9 +205,18 @@ function App() {
               <Brain className="w-12 h-12 text-blue-600" />
               <h1 className="text-4xl font-bold text-gray-800">Raven's Progressive Matrices</h1>
             </div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-4">
               Test your pattern recognition and logical reasoning skills with these classic intelligence puzzles.
             </p>
+            <a
+              href="https://github.com/yuis-ice/rpm-iq-exam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-gray-500 hover:text-gray-700 transition-colors text-sm"
+            >
+              <Github className="w-4 h-4" />
+              View on GitHub
+            </a>
           </div>
           
           <LevelSelection onSelectLevel={startLevel} />
@@ -227,6 +245,15 @@ function App() {
             <span>Progress: {gameState.currentPuzzle + 1}/{gameState.totalPuzzles}</span>
             <span>Score: {gameState.score}</span>
             <span>Accuracy: {gameState.score > 0 ? Math.round((gameState.score / (gameState.currentPuzzle || 1)) * 100) : 0}%</span>
+            <a
+              href="https://github.com/yuis-ice/rpm-iq-exam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-gray-700 transition-colors"
+              title="View on GitHub"
+            >
+              <Github className="w-5 h-5" />
+            </a>
           </div>
         </div>
 
